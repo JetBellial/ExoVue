@@ -8,19 +8,27 @@
     <div class="d-flex justify-content-center">
         <button @click="reset">Remise a zéro</button>
     </div>
-    <p>{{ nom() }}</p>
+    <p>{{ nom }}</p>
 </template>
     
 <script setup lang='js'>
 import {ref} from 'vue'
+import {computed} from 'vue'
 const nbr = ref(0);
 const augmenter = () => nbr.value+=10
 const reduire = () => nbr.value-=44
 const reset = () => nbr.value=0
-function nom(){
+//Mauvaise version:
+// function nom(){
+//     console.log('Pere Castor')
+//     return 'Pere Castor';
+// }
+
+//Bonne version:
+const nom = computed(() => {
     console.log('Pere Castor')
     return 'Pere Castor';
-}
+})
 </script>
     
 <style scoped lang="css">

@@ -68,6 +68,12 @@ const router = createRouter({
             name: "ExoBug",
             component: () => import("../views/ExoBug.vue")
         },
+        {
+            path: "/TPReactivite",
+            alias: "/TPReactivite",
+            name: "TPReactivite",
+            component: () => import("../views/TPReactivite.vue")
+        },
     ]
 });
 export default router;

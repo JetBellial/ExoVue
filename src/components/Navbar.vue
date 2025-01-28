@@ -6,9 +6,12 @@ defineProps({
 })
 
 const count = ref(0)
+
 </script>
 
 <template>
+
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,7 +19,12 @@ const count = ref(0)
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item active">
+      <div class="dropdown">
+        <button class="dropbtn">Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
+      <div class="dropdown-content">
+        <li class="nav-item active">
         <RouterLink class="nav-link" to="/">Accueil</RouterLink>
       </li>
       <li class="nav-item">
@@ -49,9 +57,16 @@ const count = ref(0)
       <li class="nav-item">
         <RouterLink class="nav-link" to="/ExoBug">Exo Bug</RouterLink>
       </li>
+      <li class="nav-item">
+        <RouterLink class="nav-link" to="/TPReactivite">TP Reactivité</RouterLink>
+      </li>
+      </div>
+      </div>
     </ul>
   </div>
 </nav>
+
+
 </template>
 
 <style scoped>
