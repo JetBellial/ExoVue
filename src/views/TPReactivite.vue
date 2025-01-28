@@ -15,6 +15,7 @@
     
 <script setup lang='js'>
 import {ref, watch} from 'vue'
+
 const msg = ref("")
 const nbr = ref(0)
 const augmenter = () => nbr.value+=1
@@ -26,6 +27,10 @@ watch(nbr, (newVal) => {
         msg.value = "Trop haut !"
     } else if(newVal >= 30){
         msg.value = "Non c'est abusé là"
+        setTimeout(() => {
+            nbr.value = 0
+            // ou reset()
+        }, 3000);
     } else {
         msg.value = ""
     }
