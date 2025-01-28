@@ -43,6 +43,12 @@ const count = ref(0)
       <li class="nav-item">
         <RouterLink class="nav-link" to="/TPEvent">TPEvent</RouterLink>
       </li>
+      <li class="nav-item">
+        <RouterLink class="nav-link" to="/VModel">V-Model</RouterLink>
+      </li>
+      <li class="nav-item">
+        <RouterLink class="nav-link" to="/ExoBug">Exo Bug</RouterLink>
+      </li>
     </ul>
   </div>
 </nav>

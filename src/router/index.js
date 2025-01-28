@@ -56,6 +56,18 @@ const router = createRouter({
             name: "TPEvent",
             component: () => import("../views/TPEvent.vue")
         },
+        {
+            path: "/VModel",
+            alias: "/VModel",
+            name: "VModel",
+            component: () => import("../views/LessonTwoWayBinding.vue")
+        },
+        {
+            path: "/ExoBug",
+            alias: "/ExoBug",
+            name: "ExoBug",
+            component: () => import("../views/ExoBug.vue")
+        },
     ]
 });
 export default router;
