@@ -74,6 +74,24 @@ const router = createRouter({
             name: "TPReactivite",
             component: () => import("../views/TPReactivite.vue")
         },
+        {
+            path: "/StyleDyn",
+            alias: "/StyleDyn",
+            name: "StyleDyn",
+            component: () => import("../views/StyleDyn.vue")
+        },
+        {
+            path: "/StyleDynClass",
+            alias: "/StyleDynClass",
+            name: "StyleDyn",
+            component: () => import("../views/StyleDynClass.vue")
+        },
+        {
+            path: "/TPStyle",
+            alias: "/TPStyle",
+            name: "TPStyle",
+            component: () => import("../views/TPStyle.vue")
+        },
     ]
 });
 export default router;

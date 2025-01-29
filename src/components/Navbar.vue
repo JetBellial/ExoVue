@@ -19,10 +19,6 @@ const count = ref(0)
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-      <div class="dropdown">
-        <button class="dropbtn">Dropdown
-          <i class="fa fa-caret-down"></i>
-        </button>
       <div class="dropdown-content">
         <li class="nav-item active">
         <RouterLink class="nav-link" to="/">Accueil</RouterLink>
@@ -60,7 +56,15 @@ const count = ref(0)
       <li class="nav-item">
         <RouterLink class="nav-link" to="/TPReactivite">TP Reactivité</RouterLink>
       </li>
-      </div>
+      <li class="nav-item">
+        <RouterLink class="nav-link" to="/StyleDyn">Style Dyn</RouterLink>
+      </li>
+      <li class="nav-item">
+        <RouterLink class="nav-link" to="/StyleDynClass">Style Dyn Class</RouterLink>
+      </li>
+      <li class="nav-item">
+        <RouterLink class="nav-link" to="/TPStyle">TP Style</RouterLink>
+      </li>
       </div>
     </ul>
   </div>
