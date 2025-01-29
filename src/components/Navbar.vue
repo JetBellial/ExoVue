@@ -65,6 +65,9 @@ const count = ref(0)
       <li class="nav-item">
         <RouterLink class="nav-link" to="/TPStyle">TP Style</RouterLink>
       </li>
+      <li class="nav-item">
+        <RouterLink class="nav-link" to="/VIf">V-If</RouterLink>
+      </li>
       </div>
     </ul>
   </div>

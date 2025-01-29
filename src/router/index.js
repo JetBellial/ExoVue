@@ -92,6 +92,12 @@ const router = createRouter({
             name: "TPStyle",
             component: () => import("../views/TPStyle.vue")
         },
+        {
+            path: "/VIf",
+            alias: "/VIf",
+            name: "VIf",
+            component: () => import("../views/VIf.vue")
+        },
     ]
 });
 export default router;
